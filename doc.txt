@@ -1,0 +1,3 @@
+packer commands
+packer init ubuntu.pkr.hcl
+packer build ubuntu.pkr.hcl  
