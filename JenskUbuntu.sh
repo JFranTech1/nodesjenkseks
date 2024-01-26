@@ -22,6 +22,15 @@ sudo apt-get update -y
 #install jenkins using apt package management
 sudo apt-get install jenkins -y
 
+#getting script to install node
+curl -sL https://deb.nodesource.com/setup_20.x -o /tmp/nodesource_setup.sh
+
+#run script to install node
+sudo bash /tmp/nodesource_setup.sh
+
+install docker 
+
+
 
 #enable jenkins to start when system starts
 sudo systemctl enable jenkins
