@@ -8,7 +8,7 @@ packer {
 }
 
 source "amazon-ebs" "ubuntu" {
-  ami_name      = "prodjenkinsimage2"
+  ami_name      = "prodjenkinsmasterimage"
   instance_type = "t2.micro"
   region        = "us-east-2"
   source_ami_filter {
@@ -29,7 +29,7 @@ build {
     "source.amazon-ebs.ubuntu"
   ]
   provisioner "shell" {
-    script = "./JenskUbuntu.sh"
+    script = "./installJenkins.sh"
   }
 }
 
